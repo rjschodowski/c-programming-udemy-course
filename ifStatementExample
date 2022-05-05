@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+  while (1) {
+  int number;
+  printf("Enter a number: ");
+  scanf("%d", &number);
+  if(number < 50)
+  {
+    printf("Number is less than 50.\n");
+    } else {
+    printf("The number is too high!\n");
+    }
+    }
+  return 0;
+}
