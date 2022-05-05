@@ -1,0 +1,28 @@
+//Find the smallest number of three entered numbers.
+
+#include <stdio.h>
+
+int main(void) {
+  
+  int num1, num2, num3, smallestNumber;
+  printf("Enter the values for a,b and c:\n");
+  scanf("%d %d %d",&num1,&num2,&num3);
+  
+  if(num1<num2)
+  {
+    if(num1<num3)
+    smallestNumber=num1;
+    else
+    smallestNumber=num3;
+  }
+  else
+  {
+  if(num1<num3)
+  smallestNumber=num2;
+  else
+  smallestNumber=num3;
+  }
+
+printf("The smallest value is %d",smallestNumber);
+
+}
