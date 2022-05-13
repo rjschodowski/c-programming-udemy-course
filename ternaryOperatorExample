@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/*
+Check whether entered number is positive or negative using conditional operator.
+*/
+
+int main() {
+  int number;
+  printf("Enter a number: ");
+  scanf("%d", &number);
+  (number >= 0) ? printf("Number is positive") : printf("Number is negative");
+  return 0;
+}
