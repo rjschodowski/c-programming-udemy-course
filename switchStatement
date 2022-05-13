@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main(void) {
+  int grade;
+  int menuSelection;
+  
+  printf("\tMENU\n");
+  printf("1 ] ARTS\n");
+  printf("2 ] COMMERCE\n");
+  printf("3 ] SCIENCE\n\n");
+  printf("Select a desired field of study:\n");
+  scanf("%d", &menuSelection);
+  printf("Enter student percentage: \n");
+  scanf("%d", &grade);
+
+  switch(menuSelection)
+    {
+      case 1:
+      if(grade>=60)
+      {
+        printf("You are eligible for the arts.");
+      }
+        // else
+        // {
+        //   printf("You are ineligible for the arts.");
+        // }
+      
+      break;
+
+      case 2:
+        if(grade>=70)
+        {
+          printf("You are eligible for commerce.");
+        }
+        else
+        {
+          printf("You are ineligible for the commerce.");
+        }
+      
+      break;
+
+      case 3:
+        if(grade>=80)
+        {
+          printf("You are eligible for science.");
+        } 
+        else
+        {
+          printf("You are ineligible for science.");
+        }
+      
+      break;
+
+      default:
+      printf("Please enter valid input: ");
+      break;
+    }
+  return 0;
+}
