@@ -18,23 +18,23 @@ int main(void) {
       case 1:
       if(grade>=60)
       {
-        printf("You are eligible for the arts.");
+        printf("You are eligible for the arts program.");
       }
-        // else
-        // {
-        //   printf("You are ineligible for the arts.");
-        // }
+        else
+        {
+          printf("You are ineligible for the arts program.");
+        }
       
       break;
 
       case 2:
         if(grade>=70)
         {
-          printf("You are eligible for commerce.");
+          printf("You are eligible for the commerce program.");
         }
         else
         {
-          printf("You are ineligible for the commerce.");
+          printf("You are ineligible for the commerce program.");
         }
       
       break;
@@ -42,11 +42,11 @@ int main(void) {
       case 3:
         if(grade>=80)
         {
-          printf("You are eligible for science.");
+          printf("You are eligible for the science program.");
         } 
         else
         {
-          printf("You are ineligible for science.");
+          printf("You are ineligible for the science program.");
         }
       
       break;
