@@ -1,0 +1,50 @@
+/*
+
+Nested For Loop Examples
+
+*/
+
+/*
+*************************************************************************
+Inner loop printed within inner loop; outer loop printed within outer loop
+*************************************************************************
+*/
+
+#include <stdio.h>
+
+int main(void) {
+  for(int i=1; i<=3; i++)
+    {
+      for(int j=1; j<=3; j++)
+        {
+          
+          printf("\tThe inner value (j) is:* %d", j);
+          printf("\n");
+        }
+      printf("The outer value (i) is:-----   %d", i);
+          printf("\n");
+    }
+  return 0;
+}
+
+/*
+*************************************************************************
+Inner and outer loops printed within inner loop
+*************************************************************************
+*/
+
+#include <stdio.h>
+
+int main(void) {
+  for(int i=1; i<=3; i++)
+    {
+      for(int j=1; j<=3; j++)
+        {
+          printf("The outer value (i) is:-----   %d", i);
+          printf("\n");
+          printf("\tThe inner value (j) is:* %d", j);
+          printf("\n");
+        }
+    }
+  return 0;
+}
